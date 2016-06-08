@@ -1,0 +1,39 @@
+{
+	"id": "idsvc.wrangler",
+	"name": "IDS Execution System",
+	"status": "UP",
+	"type": "EXECUTION",
+	"executionType": "HPC",
+	"queues": [
+		{
+			"name": "debug",
+			"default": true
+		}
+	],
+	"login": {
+		"host": "wrangler.tacc.utexas.edu",
+		"port": 22,
+		"protocol": "SSH",
+		"auth": {
+            "username": "amagill",
+            "type": "SSHKEYS",
+            "publicKey": "",
+            "privateKey": ""
+		}
+	},
+	"storage": {
+		"host": "wrangler.tacc.utexas.edu",
+		"port": 22,
+		"protocol": "SFTP",
+    "rootDir": "/",
+		"homeDir": "/data/03738/amagill/scratch",
+		"auth": {
+	        "username": "amagill",
+            "type": "SSHKEYS",
+            "publicKey": "",
+            "privateKey": ""
+		}
+	},
+	"scheduler": "SLURM",
+    "scratchDir": "/data/03738/amagill/scratch"
+}
